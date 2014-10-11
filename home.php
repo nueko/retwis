@@ -9,7 +9,7 @@ $r = redisLink();
 ?>
 <div id="postform">
 <form method="POST" action="post.php">
-<?php echo utf8entities($User['username'])?>, what you are doing?
+<?php echo utf8entities($User['username']) ?>, what you are doing?
 <br>
 <table>
 <tr><td><textarea cols="70" rows="3" name="status"></textarea></td></tr>
@@ -17,8 +17,8 @@ $r = redisLink();
 </table>
 </form>
 <div id="homeinfobox">
-<?php echo $r->zcard("followers:".$User['id'])?> followers<br>
-<?php echo $r->zcard("following:".$User['id'])?> following<br>
+<?php echo $r->zcard("followers:".$User['id']) ?> followers<br>
+<?php echo $r->zcard("following:".$User['id']) ?> following<br>
 </div>
 </div>
 <?php
